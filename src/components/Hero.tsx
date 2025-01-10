@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="w-full md:w-2/3">
             <div className="flex items-center gap-8 mb-6">
               <img
-                src="../assets/hero/saya.jpg"
+                src="src/assets/hero/saya.jpg"
                 alt="Profile"
                 className="w-24 h-24 rounded-full object-cover border-2 border-primary"
               />
