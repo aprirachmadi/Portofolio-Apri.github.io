@@ -24,7 +24,7 @@ const Projects = () => {
       title: "Fire Smoke Classification",
       description: "Fire Smoke Classification using Vision Transformer with White Noise Feature ",
       tech: ["Huggingface", "Python", "cv2"],
-      image: "assets/project/Train Data (6).jpg",
+      image: "../assets/project/Train Data (6).jpg",
       category: ["all", "computer vision"],
       longDescription: "Built an Image Classification model using Vision Transformers (ViT) to Classify Fire, Smoke, Fire-smoke, and None image",
       challenges: [
@@ -40,7 +40,7 @@ const Projects = () => {
       title: "Hoax Classification",
       description: "Hoax Classification on Political News in Indonesia",
       tech: ["Huggingface", "Python"],
-      image: "assets/project/hoax.png",
+      image: "../assets/project/hoax.png",
       category: ["all", "NLP"],
       longDescription: "Built an NLP model using PyTorch, Transformers, and a pre-trained IndoBERT language model to detect hoaxes or misinformation in political news articles with 99% accuracy. The model was trained on a dataset of legitimate and hoax political news, leveraging the state-of-the-art IndoBERT variant of BERT pre-trained on Indonesian text data. ",
       challenges: [
@@ -54,7 +54,7 @@ const Projects = () => {
       title: "Network Intrusion Detection Systems (NIDS)",
       description: "Network Intrusion Detection Systems (NIDS) on CIC-IDS 2017 Dataset using Machine Learning",
       tech: ["Scikit-learn", "Python", "pandas", "LightGBM", "Matplotlib"],
-      image: "assets/project/nids.png",
+      image: "../assets/project/nids.png",
       category: ["all", "data science"],
       longDescription: "Built a machine learning model for Networ Intrusion Detection using the CIC-IDS 2017 dataset. The project involved data preprocessing, exploratory data analysis, and building a classifier model using the LightGBM Classifier algorithm. The resulting model achieved an impressive F1-score macro of 88.59%, demonstrating its effectiveness in detecting network intrusions and potential cybersecurity threats ",
       challenges: [
@@ -68,7 +68,7 @@ const Projects = () => {
       title: "Vote Detection on SIREKAP form",
       description: "Vote Detection on SIREKAP form using YOLO & TrOCR",
       tech: ["Python", "YOLO", "Pytorch", "Transformers"],
-      image: "assets/project/sirekap.png",
+      image: "../assets/project/sirekap.png",
       category: ["all", "computer vision", "featured"],
       longDescription: "Built a machine learning model for Networ Intrusion Detection using the CIC-IDS 2017 dataset. The project involved data preprocessing, exploratory data analysis, and building a classifier model using the LightGBM Classifier algorithm. The resulting model achieved an impressive F1-score macro of 88.59%, demonstrating its effectiveness in detecting network intrusions and potential cybersecurity threats ",
       challenges: [
@@ -82,7 +82,7 @@ const Projects = () => {
       title: "Vehicle Detection and Counting System",
       description: "Vehicle Detection and Counting System using YOLOv8",
       tech: ["Python", "YOLO", "Pytorch", "Supervision"],
-      image: "assets/project/vehiclecounting.png",
+      image: "../assets/project/vehiclecounting.png",
       category: ["all", "computer vision", "featured"],
       longDescription: "This project implements a multi-gate vehicle detection system using the YOLOv8 model. The system tracks and counts vehicles as they pass through predefined gates in a video. The project leverages pretrained YOLOv8 weights for object detection and tracking.",
       challenges: [
@@ -96,7 +96,7 @@ const Projects = () => {
       title: "Carbon Emission Prediction",
       description: "Carbon Emission Prediction using Machine Learning",
       tech: ["Python", "Scikit-learn", "pandas", "Matplotlib"],
-      image: "assets/project/carbon.png",
+      image: "../assets/project/carbon.png",
       category: ["all", "data science"],
       longDescription: "This project focused on predicting fuel consumption using theCanada Fuel Consumption 2024 dataset. It involved data preprocessing, exploratory data analysis, and building aregression model. The random forest Regressor algorithmwas employed, and the resulting model achieved a remarkable R-squared value of 0.99, indicating its highaccuracy in predicting fuel consumption based on the given features.",
       challenges: [
@@ -110,7 +110,7 @@ const Projects = () => {
       title: "Garbage Classification Web Apps",
       description: "Garbage Classification Web Apps using Streamlit",
       tech: ["Python", "Tensorflow", "Streamlit", "cv2"],
-      image: "assets/project/pilahin.jpg",
+      image: "../assets/project/pilahin.jpg",
       category: ["all", "computer vision"],
       longDescription: "Classify garbage image into Organic or Anorganic and deploy it into web apps using Streamlit",
       challenges: [ 
@@ -124,7 +124,7 @@ const Projects = () => {
       title: "Application of Golden Section Search Methods",
       description: "Application of Golden Section Search Methods for Double Exponential Smoothing Parameters Optimization",
       tech: ["Python", "Numpy", "Pandas", "Matplotlib"],
-      image: "assets/project/goldensection.png",
+      image: "../assets/project/goldensection.png",
       category: ["all", "data science"],
       longDescription: "Utilizing Golden Section Search for Optimizing Parameters of Double Exponential Smoothing Holt Model",
       challenges: [ 

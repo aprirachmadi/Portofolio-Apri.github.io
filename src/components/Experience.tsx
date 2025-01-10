@@ -24,7 +24,7 @@ const Experience = () => {
           "Successfully done atleast 5 projects in 3 months",
         ]
       },
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+      image: "../assets/experience/spil.png"
     },
     {
       title: "Part-time Data Scientist Intern",
@@ -40,7 +40,7 @@ const Experience = () => {
           ""
         ]
       },
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+      image: "../assets/experience/braincore (1).png"
     },
     {
       title: "Machine Learning Cohort at Bangkit Academy 2023",
@@ -59,7 +59,7 @@ const Experience = () => {
           "Graduated with a Distinction grade"
         ]
       },
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+      image: "../assets/experience/bangkit.png"
     }
   ];
 

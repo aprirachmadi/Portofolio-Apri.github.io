@@ -27,7 +27,7 @@ const Education = () => {
           "Satria Data Finalist Delegate for 3 consecutive years (2022, 2023, 2024)"
         ]
       },
-      image: "assets/education/undip.jpg"
+      image: "../assets/education/undip.jpg"
     }
   ];
 
