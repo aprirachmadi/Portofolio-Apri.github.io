@@ -1,6 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { GraduationCap } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import undip from "../assets/education/undip.jpg";
 
 const Education = () => {
   const education = [
@@ -27,7 +28,7 @@ const Education = () => {
           "Satria Data Finalist Delegate for 3 consecutive years (2022, 2023, 2024)"
         ]
       },
-      image: "../assets/education/undip.jpg"
+      image: undip
     }
   ];
 

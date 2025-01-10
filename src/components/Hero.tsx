@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import profileImg from "../assets/hero/saya.jpg";
+import saya from "../assets/hero/saya.jpg";
+import space from "../assets/hero/space.jpg";
+
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -16,7 +18,7 @@ const Hero = () => {
           <div className="w-full md:w-2/3">
             <div className="flex items-center gap-8 mb-6">
               <img
-                src={profileImg}
+                src={saya}
                 alt="Profile"
                 className="w-24 h-24 rounded-full object-cover border-2 border-primary"
               />
@@ -50,7 +52,7 @@ const Hero = () => {
           </div>
           <div className="hidden md:block w-full md:w-1/3 pl-8">
             <img
-              src="../assets/hero/space.jpg"
+              src={space}
               alt="Profile Showcase"
               className="w-full max-w-md rounded-lg object-cover border-2 border-primary shadow-xl"
             />

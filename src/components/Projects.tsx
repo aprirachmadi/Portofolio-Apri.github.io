@@ -3,10 +3,25 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
+import fire from "../assets/project/Train Data (6).jpg";
+import hoax from "../assets/project/hoax.png";
+import nids from "../assets/project/nids.png";
+import sirekap from "../assets/project/sirekap.png";
+import vehiclecounting from "../assets/project/vehiclecounting.png";
+import carbon from "../assets/project/carbon.png";
+import pilahin from "../assets/project/pilahin.jpg";
+import goldensection from "../assets/project/goldensection.png";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeFilter, setActiveFilter] = useState("all");
+
+  interface ProjectLink {
+    type: "github" | "ppt" | "streamlit";
+    url: string;
+  }
 
   interface Project {
     title: string;
@@ -17,6 +32,7 @@ const Projects = () => {
     longDescription: string;
     challenges: string[];
     outcomes: string[];
+    links?: ProjectLink[];
   }
 
   const projects: Project[] = [
@@ -24,7 +40,7 @@ const Projects = () => {
       title: "Fire Smoke Classification",
       description: "Fire Smoke Classification using Vision Transformer with White Noise Feature ",
       tech: ["Huggingface", "Python", "cv2"],
-      image: "../assets/project/Train Data (6).jpg",
+      image: fire,
       category: ["all", "computer vision"],
       longDescription: "Built an Image Classification model using Vision Transformers (ViT) to Classify Fire, Smoke, Fire-smoke, and None image",
       challenges: [
@@ -34,13 +50,16 @@ const Projects = () => {
       ],
       outcomes: [
         "Aqcquired 90% accuracy",
+      ],
+      links: [
+        { type: "github", url: "https://github.com/aprirachmadi"},
       ]
     },
     {
       title: "Hoax Classification",
       description: "Hoax Classification on Political News in Indonesia",
       tech: ["Huggingface", "Python"],
-      image: "../assets/project/hoax.png",
+      image: hoax,
       category: ["all", "NLP"],
       longDescription: "Built an NLP model using PyTorch, Transformers, and a pre-trained IndoBERT language model to detect hoaxes or misinformation in political news articles with 99% accuracy. The model was trained on a dataset of legitimate and hoax political news, leveraging the state-of-the-art IndoBERT variant of BERT pre-trained on Indonesian text data. ",
       challenges: [
@@ -48,13 +67,16 @@ const Projects = () => {
       ],
       outcomes: [
         "Aqcquired 99% accuracy",
+      ],
+      links: [
+        { type: "github", url: "https://github.com/aprirachmadi/Indonesian-Political-News-Hoax"},
       ]
     },
     {
       title: "Network Intrusion Detection Systems (NIDS)",
       description: "Network Intrusion Detection Systems (NIDS) on CIC-IDS 2017 Dataset using Machine Learning",
       tech: ["Scikit-learn", "Python", "pandas", "LightGBM", "Matplotlib"],
-      image: "../assets/project/nids.png",
+      image: nids,
       category: ["all", "data science"],
       longDescription: "Built a machine learning model for Networ Intrusion Detection using the CIC-IDS 2017 dataset. The project involved data preprocessing, exploratory data analysis, and building a classifier model using the LightGBM Classifier algorithm. The resulting model achieved an impressive F1-score macro of 88.59%, demonstrating its effectiveness in detecting network intrusions and potential cybersecurity threats ",
       challenges: [
@@ -62,13 +84,16 @@ const Projects = () => {
       ],
       outcomes: [
         "Acquired 88% accuracy",
+      ],
+      links: [
+        { type: "ppt", url: "https://www.canva.com/design/DAFzwdGqk9I/Gm2wSNS3_8p36L63YsCU2Q/edit"},
       ]
     },
     {
       title: "Vote Detection on SIREKAP form",
       description: "Vote Detection on SIREKAP form using YOLO & TrOCR",
       tech: ["Python", "YOLO", "Pytorch", "Transformers"],
-      image: "../assets/project/sirekap.png",
+      image: sirekap,
       category: ["all", "computer vision", "featured"],
       longDescription: "Built a machine learning model for Networ Intrusion Detection using the CIC-IDS 2017 dataset. The project involved data preprocessing, exploratory data analysis, and building a classifier model using the LightGBM Classifier algorithm. The resulting model achieved an impressive F1-score macro of 88.59%, demonstrating its effectiveness in detecting network intrusions and potential cybersecurity threats ",
       challenges: [
@@ -76,13 +101,17 @@ const Projects = () => {
       ],
       outcomes: [
         "Acquired 88% accuracy",
+      ],
+      links: [
+        { type: "github", url: "https://github.com/aprirachmadi/sirekap-ocr"},
+        { type: "streamlit", url: "https://sirekap-ocr-pemilu2024.streamlit.app/"},
       ]
     },
     {
       title: "Vehicle Detection and Counting System",
       description: "Vehicle Detection and Counting System using YOLOv8",
       tech: ["Python", "YOLO", "Pytorch", "Supervision"],
-      image: "../assets/project/vehiclecounting.png",
+      image: vehiclecounting,
       category: ["all", "computer vision", "featured"],
       longDescription: "This project implements a multi-gate vehicle detection system using the YOLOv8 model. The system tracks and counts vehicles as they pass through predefined gates in a video. The project leverages pretrained YOLOv8 weights for object detection and tracking.",
       challenges: [
@@ -90,13 +119,16 @@ const Projects = () => {
       ],
       outcomes: [
         "The model was able to track and detect every Bus and Car in the video and counts every vehicle which passed through specific gate.",
+      ],
+      links: [
+        { type: "github", url: "https://github.com/aprirachmadi/VehicleCounting"}
       ]
     },
     {
       title: "Carbon Emission Prediction",
       description: "Carbon Emission Prediction using Machine Learning",
       tech: ["Python", "Scikit-learn", "pandas", "Matplotlib"],
-      image: "../assets/project/carbon.png",
+      image: carbon,
       category: ["all", "data science"],
       longDescription: "This project focused on predicting fuel consumption using theCanada Fuel Consumption 2024 dataset. It involved data preprocessing, exploratory data analysis, and building aregression model. The random forest Regressor algorithmwas employed, and the resulting model achieved a remarkable R-squared value of 0.99, indicating its highaccuracy in predicting fuel consumption based on the given features.",
       challenges: [
@@ -104,13 +136,16 @@ const Projects = () => {
       ],
       outcomes: [
         "Achieved a remarkable R-squared value of 0.99",
+      ],
+      links: [
+        { type: "github", url: "https://github.com/aprirachmadi/carbon-emission"}
       ]
     },
     {
       title: "Garbage Classification Web Apps",
       description: "Garbage Classification Web Apps using Streamlit",
       tech: ["Python", "Tensorflow", "Streamlit", "cv2"],
-      image: "../assets/project/pilahin.jpg",
+      image: pilahin,
       category: ["all", "computer vision"],
       longDescription: "Classify garbage image into Organic or Anorganic and deploy it into web apps using Streamlit",
       challenges: [ 
@@ -118,13 +153,18 @@ const Projects = () => {
       ],
       outcomes: [
         "Acquired 88% accuracy",
+      ],
+      links: [
+        { type: "github", url: "https://github.com/aprirachmadi/klasifikasi-sampah-2"},
+        { type: "streamlit", url: "https://klasifikasi-sampah-2.streamlit.app/"},
       ]
+
     },
     {
       title: "Application of Golden Section Search Methods",
       description: "Application of Golden Section Search Methods for Double Exponential Smoothing Parameters Optimization",
       tech: ["Python", "Numpy", "Pandas", "Matplotlib"],
-      image: "../assets/project/goldensection.png",
+      image: goldensection,
       category: ["all", "data science"],
       longDescription: "Utilizing Golden Section Search for Optimizing Parameters of Double Exponential Smoothing Holt Model",
       challenges: [ 
@@ -132,6 +172,9 @@ const Projects = () => {
       ],
       outcomes: [
         "Succesfully built an optimization model for Double Exponential Smoothing Holt Model rivaling the performance of an existing optimization model",
+      ],
+      links: [
+        { type: "github", url: "https://github.com/aprirachmadi/Optimization-Methods"}
       ]
     },
   ];
@@ -147,6 +190,19 @@ const Projects = () => {
   const filteredProjects = projects.filter(project =>
     activeFilter === "all" ? true : project.category.includes(activeFilter)
   );
+
+  const getLinkLabel = (type: string) => {
+    switch (type) {
+      case "github":
+        return "GitHub Repository";
+      case "ppt":
+        return "Presentation";
+      case "streamlit":
+        return "Live Demo";
+      default:
+        return type;
+    }
+  };
 
   return (
     <section id="projects" className="py-20 bg-background">
@@ -221,6 +277,22 @@ const Projects = () => {
                 />
                 <p className="text-muted-foreground mb-6">{selectedProject.longDescription}</p>
                 
+                {selectedProject.links && selectedProject.links.length > 0 && (
+                  <div className="flex flex-wrap gap-4 mb-6">
+                    {selectedProject.links.map((link, index) => (
+                      <Button
+                        key={index}
+                        variant="outline"
+                        className="gap-2"
+                        onClick={() => window.open(link.url, '_blank')}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        {getLinkLabel(link.type)}
+                      </Button>
+                    ))}
+                  </div>
+                )}
+
                 <div className="space-y-6">
                   <div>
                     <h3 className="font-semibold mb-2">Challenges</h3>

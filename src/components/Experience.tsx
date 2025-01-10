@@ -1,6 +1,9 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Briefcase } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import spil from "../assets/experience/spil.png";
+import braincore from "../assets/experience/braincore (1).png";
+import bangkit from "../assets/experience/bangkit.png";
 
 const Experience = () => {
   const experiences = [
@@ -24,7 +27,7 @@ const Experience = () => {
           "Successfully done atleast 5 projects in 3 months",
         ]
       },
-      image: "../assets/experience/spil.png"
+      image: spil
     },
     {
       title: "Part-time Data Scientist Intern",
@@ -40,7 +43,7 @@ const Experience = () => {
           ""
         ]
       },
-      image: "../assets/experience/braincore (1).png"
+      image: braincore
     },
     {
       title: "Machine Learning Cohort at Bangkit Academy 2023",
@@ -59,7 +62,7 @@ const Experience = () => {
           "Graduated with a Distinction grade"
         ]
       },
-      image: "../assets/experience/bangkit.png"
+      image: bangkit
     }
   ];
 
