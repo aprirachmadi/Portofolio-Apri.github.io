@@ -2,7 +2,7 @@ import { Linkedin, Github, Twitter } from "lucide-react";
 import { Mail } from "lucide-react"; // Import the mail icon
 
 const Contact = () => {
-  const recipientEmail = "your_email@example.com"; // <- Your email address here
+  const recipientEmail = "rachmadiapri@gmail.com"; // <- Your email address here
 
     const handleGmailClick = () => {
       window.location.href = `mailto:${recipientEmail}`;

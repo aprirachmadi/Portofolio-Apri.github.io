@@ -49,7 +49,7 @@ const Projects = () => {
         "Image with white noise"
       ],
       outcomes: [
-        "Aqcquired 90% accuracy",
+        "Acquired 90% accuracy",
       ],
       links: [
         { type: "github", url: "https://github.com/aprirachmadi"},
@@ -66,7 +66,7 @@ const Projects = () => {
         "",
       ],
       outcomes: [
-        "Aqcquired 99% accuracy",
+        "Acquired 99% accuracy",
       ],
       links: [
         { type: "github", url: "https://github.com/aprirachmadi/Indonesian-Political-News-Hoax"},
